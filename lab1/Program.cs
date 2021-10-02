@@ -32,13 +32,13 @@ namespace lab1
             Console.WriteLine("separator:\',\', \' \', \';\'");
             int[] sizeOfArray = Console.ReadLine().Split(',', ' ', ';').Select((value) => int.Parse(value)).ToArray();
 
-            Article[] articles1 = new Article[sizeOfArray[0] * sizeOfArray[1]];
+            Article[] articles1 = new Article[sizeOfArray[0] * sizeOfArray[1]];// массив
             for (int i = 0; i < articles1.Length; i++)
             {
                 articles1[i] = new Article();
             }
 
-            Article[,] articles2 = new Article[sizeOfArray[0] ,sizeOfArray[1]];
+            Article[,] articles2 = new Article[sizeOfArray[0] ,sizeOfArray[1]];//прямоугольный массив
             for (int i = 0; i < sizeOfArray[0]; i++)
             {
                 for(int j =0;j< sizeOfArray[1]; j++)

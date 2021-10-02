@@ -6,7 +6,7 @@ using System.Linq;
 namespace lab1
 {
     /// <summary>
-    /// 
+    /// Class for containing all Magazine metadata, including editors and articles.
     /// </summary>
     class Magazine
     {
@@ -14,7 +14,7 @@ namespace lab1
         DateTime createdDate;
         int circulation;
         Article[] articles;
-        public Frequency Frequency { get; set; }
+        public Frequency Frequency { get; set; }//property
         /// <summary>
         /// full construcrtor
         /// </summary>
